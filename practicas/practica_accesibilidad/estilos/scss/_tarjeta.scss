@@ -1,0 +1,30 @@
+.tarjeta-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  margin: 30px auto;
+
+  .tarjeta {
+    background-color: $color-tarjeta;
+    font-family: $texto;
+    font-size: $texto-size;
+    color: $color-texto;
+    height: 410px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    @media (max-width: 767px) {
+      height: 520px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
