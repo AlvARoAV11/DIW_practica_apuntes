@@ -1,0 +1,10 @@
+$titulos: "Playfair Display", serif;
+
+$texto: "Roboto", sans-serif;
+$texto-size: 14px;
+
+@mixin titulo($size) {
+    font-family: $titulos;
+    font-size: $size;
+    font-weight: bold;
+  }

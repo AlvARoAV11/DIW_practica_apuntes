@@ -1,27 +1,26 @@
 .body-inicio {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: $negro;
 
   .index-container {
     max-width: 800px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: $blanco;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
   }
 
   .hnombre {
-    font-size: 36px;
-    color: #333;
+    @include titulo(32px);
+    color: $negro;
     margin-bottom: 10px;
   }
 
   .hmodulo {
-    font-size: 24px;
-    color: #555;
+    @include titulo(30px);
+    color: $negro;
     margin-top: 0;
   }
 
@@ -33,12 +32,12 @@
       margin-bottom: 10px;
 
       a {
-        color: #007bff;
+        color: $azul_1;
         text-decoration: none;
         transition: color 0.3s ease;
 
         &:hover {
-          color: #0056b3;
+          color: $azul_2;
         }
       }
     }
