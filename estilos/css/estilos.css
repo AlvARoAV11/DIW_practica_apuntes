@@ -4,7 +4,7 @@
   padding: 0;
   background-color: black;
 }
-.body-inicio div {
+.body-inicio .index-container {
   max-width: 800px;
   margin: 50px auto;
   background-color: #fff;
@@ -81,6 +81,37 @@
 }
 .body-temas a:hover {
   color: #0056b3;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-column {
+  width: 45%;
+}
+footer .footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .footer-column p,
+footer .footer-column ul li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+footer .footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-column ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+footer .footer-column ul li a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=estilos.css.map */
